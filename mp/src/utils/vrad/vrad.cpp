@@ -2345,7 +2345,7 @@ void VRAD_Finish()
 	
 	char str[512];
 	GetHourMinuteSecondsString( (int)( end - g_flStartTime ), str, sizeof( str ) );
-	Msg( "%s elapsed\n", str );
+	Msg( "ZCC VRAD Done, %s elapsed\n", str );
 
 	ReleasePakFileLumps();
 }
@@ -2893,7 +2893,8 @@ int RunVRAD( int argc, char **argv )
 	Msg("Valve Software - vrad.exe (" __DATE__ ")\n" );
 #endif
 
-	Msg("\n      Valve Radiosity Simulator     \n");
+	Msg("- Valve Radiosity Simulator \n");
+	Msg("\n      Zoephix's Custom Compiler     \n\n");
 
 	verbose = true;  // Originally FALSE
 

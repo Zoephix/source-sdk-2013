@@ -1199,7 +1199,7 @@ int RunVVis( int argc, char **argv )
 
 	char str[512];
 	GetHourMinuteSecondsString( (int)( end - start ), str, sizeof( str ) );
-	Msg( "%s elapsed\n", str );
+	Msg( "ZCC VVIS Done, %s elapsed\n", str );
 
 	ReleasePakFileLumps();
 	DeleteCmdLine( argc, argv );
